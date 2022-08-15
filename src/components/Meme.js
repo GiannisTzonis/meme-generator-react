@@ -39,7 +39,7 @@ export default function Meme() {
       <div className="form">
         <input
           type="text"
-          placeholder="Top text"
+          placeholder="Top Text"
           className="form--input"
           name="topText"
           value={meme.topText}
@@ -47,7 +47,7 @@ export default function Meme() {
         />
         <input
           type="text"
-          placeholder="Bottom text"
+          placeholder="Bottom Text"
           className="form--input"
           name="bottomText"
           value={meme.bottomText}
