@@ -1,10 +1,19 @@
 * {
     box-sizing: border-box;
+    color: #0ce6f2;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 200;
 }
 
 body {
     font-family: "Karla", sans-serif;
+    background-color: #201533;
     margin: 0;
+    
+}
+
+h3 {
+    text-decoration: underline 1px;
 }
 
 main {
@@ -15,7 +24,7 @@ main {
     display: flex;
     align-items: center;
     height: 65px;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    background: linear-gradient(90deg, #1e579c 1.18%, #1e579c 100%);
     color: white;
     padding: 20px;
 }
@@ -42,18 +51,22 @@ main {
 }
 
 .form--input {
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    border: 1px solid #D5D4D8;
+    background-color: #203562;
+    font-family: inherit;
+    border: 3px solid #0098db;
     text-indent: 5px;
+    text-decoration: none;
 }
 
 .form--button {
     grid-column: 1 / -1;
-    font-family: "Karla", sans-serif;
-    border-radius: 5px;
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-    color: white;
-    border: none;
+    font-family: inherit;
+    background: linear-gradient(90.41deg, #203562 1.14%, #203562 100%);
+    color: #0ce6f2;
+    border: 3px solid #0098db;
     cursor: pointer;
 }
+
+input::placeholder{
+    color: #0ce6f2;
+  }
