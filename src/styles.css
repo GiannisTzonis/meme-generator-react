@@ -1,81 +1,109 @@
 * {
-    box-sizing: border-box;
-    color: #0ce6f2;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 200;
+  box-sizing: border-box;
+  color: #0ce6f2;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
 }
 
 body {
-    font-family: "Karla", sans-serif;
-    background-color: #201533;
-    margin: 0;
-    
+  font-family: "Karla", sans-serif;
+  background-color: #201533;
+  margin: 0;
 }
 
 main {
-    padding: 36px;
+  padding: 36px;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background: linear-gradient(90deg, #1e579c 1.18%, #1e579c 100%);
-    color: white;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #1e579c 1.18%, #1e579c 100%);
+  color: white;
+  padding: 20px;
 }
 
 .header--image {
-    filter: drop-shadow(0 0 0.75rem #0ce6f2);
-    height: 100%;
-    margin-right: 6px;
+  filter: drop-shadow(0 0 0.75rem #0ce6f2);
+  height: 100%;
+  margin-right: 6px;
 }
 
 .header--title {
-    font-size: 1.25rem;
-    margin-right: auto;
-    text-shadow: 1px 1px red;
+  font-size: 1.25rem;
+  margin-right: auto;
+  text-shadow: 1px 1px red;
 }
 
 .header--project {
-    text-shadow: 1px 1px red;
-    font-size: 0.75rem;
-    font-weight: 500;
+  text-shadow: 1px 1px red;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .form {
-    display: grid;
-    grid-template: 40px 40px / 1fr 1fr;
-    gap: 17px;
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
 }
 
 .form--input {
-    width: 100%;
-    background-color: #203562;
-    font-family: inherit;
-    border: 3px solid #0098db;
-    text-indent: 5px;
-    text-decoration: none;
-    text-shadow: 1px 1px red;
+  width: 100%;
+  background-color: #203562;
+  font-family: inherit;
+  border: 3px solid #0098db;
+  text-indent: 5px;
+  text-decoration: none;
+  text-shadow: 1px 1px red;
 }
 
 .form--button {
-    grid-column: 1 / -1;
-    font-family: inherit;
-    background: linear-gradient(90.41deg, #203562 1.14%, #203562 100%);
-    color: #0ce6f2;
-    border: 3px solid #0098db;
-    cursor: pointer;
-    text-shadow: 1px 1px red;
+  grid-column: 1 / -1;
+  font-family: inherit;
+  background: linear-gradient(90.41deg, #203562 1.14%, #203562 100%);
+  color: #0ce6f2;
+  border: 3px solid #0098db;
+  cursor: pointer;
+  text-shadow: 1px 1px red;
 }
 
-input::placeholder{
-    color: #0ce6f2;
+input::placeholder {
+  color: #0ce6f2;
+}
+
+.meme {
+  position: relative;
 }
 
 .meme--image {
-    margin-top: 10px;
-    border: 3px solid #0098db;
-    width: 100%;
-    
+  margin-top: 10px;
+  border: 3px solid #0098db;
+  width: 100%;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
